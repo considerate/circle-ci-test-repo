@@ -1,7 +1,7 @@
 {
   "name": "circle-ci-test-repo",
-  "repository": {
-    "url": "https:considerate/circle-ci-test-repo"
+  "repository": { "type" : "git"
+      , "url" : "https://github.com/considerate/circle-ci-test-repo.git"
   },
   "description": "",
   "main": "index.js",
