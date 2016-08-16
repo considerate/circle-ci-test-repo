@@ -1,0 +1,14 @@
+machine:
+  node:
+    version: 6.2.1
+
+deployment:
+  production:
+    branch: master
+    commands:
+        - npm run semantic-release
+  staging:
+    branch: master
+    commands:
+        - npm run semantic-release
+
