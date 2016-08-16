@@ -1,0 +1,23 @@
+{
+  "name": "circle-ci-test-repo",
+  "repository": {
+    "url": "https:considerate/circle-ci-test-repo"
+  },
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "cz-conventional-changelog": "^1.2.0",
+    "semantic-release": "^4.3.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
