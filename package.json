@@ -1,7 +1,11 @@
 {
   "name": "circle-ci-test-repo",
-  "repository": { "type" : "git"
-      , "url" : "https://github.com/considerate/circle-ci-test-repo.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/considerate/circle-ci-test-repo.git"
+  },
+  "release": {
+      "verifyConditions": "condition-circle"
   },
   "description": "",
   "main": "index.js",
@@ -12,6 +16,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "condition-circle": "^1.5.0",
     "cz-conventional-changelog": "^1.2.0",
     "semantic-release": "^4.3.5"
   },
