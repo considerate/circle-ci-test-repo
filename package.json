@@ -1,23 +1,26 @@
 {
   "name": "circle-ci-test-repo",
+  "version": "0.0.0-semantically-released",
   "repository": {
     "type": "git",
     "url": "https://github.com/considerate/circle-ci-test-repo.git"
   },
   "release": {
-      "verifyConditions": "condition-circle"
+    "verifyConditions": "condition-circle",
+    "getLastRelease": "last-release-git-tag"
   },
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "node tests/index.js",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release": "semantic-release pre && semantic-release post"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
     "condition-circle": "^1.5.0",
     "cz-conventional-changelog": "^1.2.0",
+    "last-release-git-tag": "^1.0.1",
     "semantic-release": "^4.3.5"
   },
   "config": {
